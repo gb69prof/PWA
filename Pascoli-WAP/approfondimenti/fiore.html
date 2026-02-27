@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Il fiore come simbolo erotico nella letteratura</title>
+  <meta name="description" content="Percorso attraverso i secoli: il fiore come metafora del corpo, della verginità e della procreazione nella letteratura italiana." />
+  <style>
+    :root{
+      --bg:#0b0b10;
+      --panel:#12121a;
+      --panel2:#0f0f16;
+      --text:#ececf3;
+      --muted:#b7b7c9;
+      --soft:#8f90a8;
+      --line:rgba(255,255,255,.10);
+      --glow:rgba(175,89,255,.22);
+      --accent:#b86cff;
+      --accent2:#ff5fa2;
+      --good:#69ffb7;
+      --warn:#ffd36a;
+      --shadow: 0 20px 60px rgba(0,0,0,.45);
+      --radius: 22px;
+      --radius2: 16px;
+      --max: 1020px;
+    }
+
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#fafafe;
+        --panel:#ffffff;
+        --panel2:#fbfbff;
+        --text:#141425;
+        --muted:#4c4d66;
+        --soft:#6f7091;
+        --line:rgba(10,10,30,.10);
+        --glow:rgba(175,89,255,.12);
+        --shadow: 0 20px 50px rgba(18,18,40,.12);
+      }
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 15% -10%, var(--glow), transparent 60%),
+        radial-gradient(1000px 700px at 110% 20%, rgba(255,95,162,.16), transparent 55%),
+        radial-gradient(900px 500px at 45% 110%, rgba(105,255,183,.10), transparent 60%),
+        linear-gradient(180deg, var(--bg), var(--bg));
+      line-height:1.6;
+      letter-spacing:.2px;
+    }
+
+    a{color:inherit}
+
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 72px}
+
+    header.hero{
+      position:relative;
+      border:1px solid var(--line);
+      border-radius: calc(var(--radius) + 6px);
+      background:
+        linear-gradient(135deg, rgba(184,108,255,.14), rgba(255,95,162,.10) 45%, rgba(105,255,183,.08)),
+        radial-gradient(1200px 600px at 10% 20%, rgba(184,108,255,.20), transparent 55%),
+        linear-gradient(180deg, var(--panel), var(--panel2));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding:14px 18px;
+      border-bottom:1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .crumbs{display:flex; gap:10px; align-items:center; color:var(--muted); font-size:.95rem; flex-wrap:wrap}
+    .crumbs a{color:var(--muted); text-decoration:none; border-bottom:1px dashed transparent}
+    .crumbs a:hover{border-bottom-color:currentColor}
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:.92rem;
+      user-select:none;
+      white-space:nowrap;
+    }
+
+    .hero .content{padding:22px 18px 24px}
+
+    h1{
+      margin:6px 0 10px;
+      font-size: clamp(1.65rem, 3.3vw, 2.35rem);
+      line-height:1.15;
+      letter-spacing:.3px;
+    }
+
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size:1.02rem;
+      max-width: 70ch;
+    }
+
+    .meta{
+      margin-top:16px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .meta .tag{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 12px;
+      background: rgba(0,0,0,.12);
+      color: var(--muted);
+      font-size:.93rem;
+    }
+
+    main{margin-top:22px}
+
+    .grid{
+      display:grid;
+      gap:14px;
+      grid-template-columns: 1.25fr .75fr;
+    }
+    @media (max-width: 920px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+
+    .card .hd{
+      padding:16px 18px;
+      border-bottom:1px solid var(--line);
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .card .hd h2{
+      margin:0;
+      font-size:1.15rem;
+      line-height:1.2;
+    }
+
+    .card .bd{padding:16px 18px}
+
+    .lead{font-size:1.03rem; color:var(--text); margin:0}
+
+    .muted{color:var(--muted)}
+
+    .callout{
+      margin:14px 0 0;
+      padding:14px 14px;
+      border-radius: var(--radius2);
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+
+    .callout strong{color:var(--text)}
+
+    .toc{
+      display:grid;
+      gap:10px;
+      padding:14px;
+    }
+
+    .toc a{
+      text-decoration:none;
+      border:1px solid var(--line);
+      border-radius: 14px;
+      padding:10px 12px;
+      background: rgba(255,255,255,.03);
+      transition: transform .15s ease, background .15s ease;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      color:var(--text);
+    }
+
+    .toc a:hover{transform: translateY(-1px); background: rgba(184,108,255,.08)}
+
+    .toc small{color:var(--muted)}
+
+    section.era{margin-top:14px}
+
+    .era .era-hd{
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:10px;
+      padding:14px 18px;
+      border-bottom:1px solid var(--line);
+      background:
+        radial-gradient(600px 220px at 18% 50%, rgba(184,108,255,.12), transparent 55%),
+        radial-gradient(600px 220px at 90% 50%, rgba(255,95,162,.09), transparent 55%);
+    }
+
+    .era h3{margin:0; font-size:1.18rem}
+    .era .when{color:var(--muted); font-size:.98rem}
+
+    .era .era-bd{padding:16px 18px}
+
+    .item{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:14px 14px;
+      background: rgba(255,255,255,.03);
+      margin-bottom:12px;
+    }
+
+    .item:last-child{margin-bottom:0}
+
+    .item .t{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      margin-bottom:8px;
+    }
+
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      font-size:.88rem;
+      color:var(--muted);
+      background: rgba(0,0,0,.10);
+    }
+
+    .badge .dot{width:9px; height:9px; border-radius:50%; background: var(--accent)}
+    .badge.pink .dot{background: var(--accent2)}
+    .badge.green .dot{background: var(--good)}
+    .badge.gold .dot{background: var(--warn)}
+
+    blockquote{
+      margin:10px 0 0;
+      padding:12px 14px;
+      border-left:3px solid rgba(184,108,255,.65);
+      border-radius: 12px;
+      background: rgba(184,108,255,.07);
+      color: var(--text);
+    }
+
+    blockquote p{margin:0}
+    .note{margin-top:10px; color:var(--muted); font-size:.98rem}
+
+    .mini{
+      display:grid;
+      gap:12px;
+      padding:14px;
+    }
+
+    .mini .box{
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.03);
+      padding:14px;
+    }
+
+    .mini h4{margin:0 0 8px; font-size:1.02rem}
+
+    .list{margin:0; padding-left:18px; color:var(--muted)}
+    .list li{margin:6px 0}
+
+    .foot{
+      margin-top:18px;
+      padding:14px 18px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:12px;
+      font-size:.95rem;
+    }
+
+    .btn{
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:10px 12px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+      transition: transform .15s ease, background .15s ease;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(105,255,183,.08)}
+
+  </style>
+
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#961B2B">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="topbar">
+        <nav class="crumbs" aria-label="Percorso">
+          <a href="../index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="./">Approfondimento</a>
+          <span aria-hidden="true">›</span>
+          <span>fiore-simbolo</span>
+        </nav>
+        <div class="pill" title="Contenuto adatto a un contesto didattico: allusione erotica trattata in forma simbolica">
+          <span aria-hidden="true">🌺</span>
+          <span>simboli • letteratura • eros</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Il fiore come simbolo erotico nella letteratura</h1>
+        <p class="subtitle">
+          Un percorso attraverso i secoli: quando la lingua non può dire, <em>allude</em>.
+          Il fiore diventa “parlar coperto”: corpo, verginità, desiderio, procreazione.
+        </p>
+        <div class="meta">
+          <span class="tag">Dalla rosa al gelsomino</span>
+          <span class="tag">Dal pudore medievale all’esplicitezza moderna</span>
+          <span class="tag">Testi, contesti, citazioni</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Colonna principale -->
+      <article class="card">
+        <div class="hd">
+          <h2 id="intro">Introduzione</h2>
+          <span class="badge gold"><span class="dot"></span>testo integrale</span>
+        </div>
+        <div class="bd">
+          <p class="lead">
+            Qui trovi l'intero testo dell'approfondimento.
+          </p>
+        </div>
+
+        <section class="era" id="testo-integrale">
+          <div class="era-hd">
+            <h3>Testo integrale</h3>
+            <div class="when">contenuto completo</div>
+          </div>
+          <div class="era-bd">
+            <div class="item" style="padding:0; overflow:hidden;">
+              <div style="padding:18px; line-height:1.7;">
+                <!-- TESTO INTEGRALE ORIGINALE -->
+                <h4>Introduzione</h4>
+                <p>I fiori occupano da secoli un posto privilegiato nell’immaginario simbolico della letteratura italiana, spesso connessi all’amore e alla sensualità. In particolare la rosa – ma anche altri fiori come il gelsomino, il giglio o l’orchidea – è stata ripetutamente impiegata come metafora del corpo femminile, della verginità o dell’atto procreativo.</p>
+                <p>Sin dal Medioevo, in epoche di forte pudore linguistico, il fiore diviene un <em>“parlar coperto”</em>, un modo allusivo e poeticamente accettabile per riferirsi agli organi sessuali o all’unione erotica. Nel Rinascimento e nel Barocco, l’associazione tra fiori e sensualità si carica di ricchezza allegorica e lessico lussureggiante; in epoca moderna, tra Ottocento e Novecento, persiste sia in forme eleganti (ad esempio in poesia) sia in modalità più disinibite o scientifiche.</p>
+                <p>Nel tempo, il significato simbolico dei fiori in ambito erotico conosce continuità (ad esempio l’idea di <em>“cogliere un fiore”</em> per indicare la deflorazione, presente tanto nei classici quanto nel linguaggio comune) ma anche trasformazioni, rispecchiando la mutata sensibilità: dal pudore medievale all’esplicitezza novecentesca.</p>
+                <p>Di seguito, attraverso le varie epoche, presentiamo testi rappresentativi – poesia, prosa narrativa e persino trattati – in cui i fiori sono usati come simboli del sesso femminile o della procreazione, con indicazione di autore, periodo, opera e citazione significativa.</p>
+
+                <h4>Medioevo (XIII–XIV secolo)</h4>
+                <h5>Cielo d’Alcamo – <em>Rosa fresca aulentissima</em> (XIII sec.)</h5>
+                <p>Nel celebre contrasto poetico attribuito a Cielo (o Ciullo) d’Alcamo, databile alla metà del Duecento, il poeta-corteggiatore apre paragonando la giovane amata a una <em>“rosa fresca aulentissima”</em>, cioè “fragrantissima”. La rosa, <em>“ch’apari inver’ la state”</em> (che sbocci d’estate), simboleggia la bellezza e la freschezza giovanile della donna, ma allude anche al suo corpo desiderabile.</p>
+                <p>L’immagine del fiore, tipica della lirica cortese provenzale, qui introduce invece una vivace scena di seduzione popolaresca: il fiore rappresenta l’oggetto del desiderio erotico. Di seguito i versi iniziali:</p>
+                <blockquote>
+                  <p>«Rosa fresca aulentissima ch’apari inver’ la state,<br>le donne ti disiano, pulzell’ e maritate…»</p>
+                </blockquote>
+                <p>In questo contesto, la rosa è un appellativo metaforico per la ragazza (tutte le donne, vergini e sposate, la “desiano”), caricando la sua figura di un’aura sensuale. Il corteggiatore implora la “rosa” di alleviare il fuoco della sua passione, invocando quindi un appagamento amoroso.</p>
+
+                <h5>Anonimo fiorentino – <em>Il Fiore</em> (fine XIII sec.)</h5>
+                <p>Alla fine del Duecento circola a Firenze un poemetto allegorico in sonetti intitolato <em>Il Fiore</em>, libero rifacimento italiano del famoso <em>Roman de la Rose</em> francese. In questa opera il fiore (che nel testo francese originale è precisamente una rosa) rappresenta esplicitamente la meta della conquista amorosa: la “rosa” incarna la persona amata e, in particolare, il suo specifico attributo femminile.</p>
+                <p>L’intera vicenda è un’allegoria del corteggiamento come assedio a un giardino, dove la rosa simboleggia la sessualità femminile che il protagonista (l’Amante) cerca di ottenere. Il titolo stesso allude al fiore da cogliere, ossia al possesso amoroso.</p>
+
+                <h4>Rinascimento (XV–XVI secolo)</h4>
+                <h5>Giovanni Boccaccio – <em>Decameron</em> (1349–51)</h5>
+                <p>Giovanni Boccaccio, pur narrando con schiettezza gioiosa molte vicende erotiche nel <em>Decameron</em>, ricorre spesso a metafore naturali per alludere al sesso. In alcune novelle si parla di “orti”, “giardini” o “vascelli da riempire” in senso figurato, evitando termini crudi e preferendo perifrasi allusive. Le donne del <em>Decameron</em> talvolta “colgono il fiore del piacere” fugace, espressione con cui l’autore indica l’assaporare le gioie sensuali temporanee.</p>
+
+                <h5>Torquato Tasso – <em>Aminta</em> (1573; publ. 1583)</h5>
+                <p>Nel pieno Rinascimento la simbologia floreale in chiave erotica riaffiora nella poesia pastorale. Un celebre esempio è nel coro che conclude l’atto I dell’<em>Aminta</em> di Tasso, dedicato alla mitica Età dell’Oro in cui gli esseri umani vivevano in libertà e innocenza sessuale, senza ipocrisie.</p>
+                <blockquote>
+                  <p>«La verginella [allora] ignuda<br>scopria sue fresche rose, ch’or tien nel velo ascose,<br>e le poma del seno acerbe e crude…»</p>
+                </blockquote>
+                <p>In questi versi la fanciulla, spogliata da inutili pudori, mostra le sue “fresche rose” – un chiaro riferimento metaforico alle parti intime o comunque alle grazie nascoste del suo corpo virginale – insieme ai “frutti acerbi” del seno. Tasso usa dunque il fiore (le rose fresche) come simbolo poetico della nudità femminile e della sua offerta spontanea nell’amore libero.</p>
+
+                <h4>Barocco (XVII secolo)</h4>
+                <h5>Giambattista Marino – <em>Adone</em> (1623)</h5>
+                <p>Il Barocco accentua il carattere lussureggiante e sensuale delle metafore floreali. Giambattista Marino, massimo poeta barocco italiano, nell’epopea mitologica <em>Adone</em> dissemina il testo di descrizioni erotiche attraverso immagini naturali.</p>
+                <blockquote>
+                  <p>«Tu sei con tue bellezze uniche e sole<br>splendor di queste piagge, egli di quelle.<br>Egli nel cerchio suo, tu nel tuo stelo;<br>tu Sole in terra, ed egli rosa in cielo.»</p>
+                </blockquote>
+                <p>Qui la rosa è elevata a simbolo di suprema bellezza: il fiore viene personificato e paragonato al sole. Pur trattandosi di un elogio estetico, il contesto è fortemente erotico: Venere, dopo aver colto una rosa, resta punta da una spina e il suo sangue dà vita al fiore di Adone; la sensualità e la carica erotica della rosa sono dunque centrali nel mito.</p>
+
+                <h4>Ottocento (XIX secolo)</h4>
+                <h5><em>La Botanica de’ fiori dedicata al Bel Sesso</em> (1827)</h5>
+                <p>Durante il XIX secolo, l’allusione sessuale tramite i fiori si manifesta non solo in letteratura creativa ma persino in ambito divulgativo. Un caso interessante è <em>La Botanica de’ Fiori dedicata al Bel Sesso</em>, un manuale illustrato pubblicato a Milano nel 1827 e rivolto alle “gentili signore”. Sotto il pretesto di insegnare nozioni di botanica alle dame, l’opera traccia un parallelo moraleggiante tra la riproduzione dei fiori e la sessualità femminile umana.</p>
+                <blockquote>
+                  <p>«…nel momento designato per la fecondazione, questo fiore apre il suo seno<br>verginale, e riceve la polvere degli stami, della quale i suoi stigmi veggonsi ben<br>presto inondati…»</p>
+                </blockquote>
+                <p>Le descrizioni scientifiche degli organi floreali diventano un discorso allusivo sull’anatomia e la virtù della donna. In queste righe l’autore descrive in termini umani l’atto di impollinazione: il fiore che apre il “seno verginale” per ricevere il polline richiama l’idea di una fanciulla che perde la verginità durante il rapporto sessuale.</p>
+
+                <h5>Gabriele D’Annunzio – <em>Il Piacere</em> (1889)</h5>
+                <p>Nel tardo Ottocento, con il Decadentismo, la simbologia floreale legata al sesso assume tinte esotiche e raffinate. Nel romanzo <em>Il Piacere</em> compare una celebre scena in cui la protagonista Elena Muti contempla un’orchidea durante un convivio.</p>
+                <blockquote>
+                  <p>«– Fior diabolico – disse Donna Elena Muti, prendendo il vaso di vetro e osservando da<br>vicino l’orchidea sanguigna e difforme. […] – Ma io preferisco le rose – disse Elena, posando<br>l’orchidea con un gesto di repulsione…»</p>
+                </blockquote>
+                <p>In questo estratto l’orchidea è qualificata diabolica: il suo aspetto viscido e carnoso la rende un simbolo di erotismo decadente, quasi demoniaco. Nel linguaggio dei fiori ottocentesco l’orchidea evocava sensualità esotica e mistero, e D’Annunzio sfrutta questa connotazione.</p>
+
+                <h4>Novecento (XX secolo) e oltre</h4>
+                <h5>Giovanni Pascoli – <em>Il gelsomino notturno</em> (1901)</h5>
+                <p>Giovanni Pascoli offre un esempio memorabile di metafora floreale legata alla sfera sessuale e procreativa. La sua poesia <em>Il gelsomino notturno</em> è un epitalamio moderno dedicato a due sposi nella notte delle nozze.</p>
+                <blockquote>
+                  <p>«È l’alba: si chiudono i petali<br>un poco gualciti; si cova,<br>dentro l’urna molle e segreta,
+non so che felicità nuova.»</p>
+                </blockquote>
+                <p>Qui il fiore del gelsomino all’alba richiude i petali “un poco sgualciti” – immagine delicata degli sposi affaticati dopo la notte d’amore. Dentro l’“urna molle e segreta” (il calice del fiore, paragonato a un grembo) “si cova una felicità nuova”: Pascoli allude sottilmente al concepimento di una nuova vita avvenuto durante la notte.</p>
+
+                <h5>Oltre il 1900</h5>
+                <p>Nel corso del XX secolo e fino ai giorni nostri, la letteratura italiana ha conosciuto sia la continuità sia il superamento di queste immagini tradizionali. Autori del secondo Novecento spesso adottano un linguaggio più esplicito riguardo al sesso, rendendo meno necessario il ricorso ai fiori come “schermo” metaforico. Ciononostante, i fiori permangono nell’immaginario come segni di sensualità e femminilità e la metafora della donna-fiore riaffiora talora in chiave ironica o nostalgica.</p>
+
+                <p>In conclusione, dal Medioevo ad oggi il fiore – e in particolare la delicata fragranza del gelsomino notturno o la sensualità della rosa – si è rivelato un simbolo multiforme della sessualità femminile: ora celebrativo della bellezza e della fertilità, ora velatamente allusivo per eludere tabù, ora oggetto di nuove interpretazioni in epoca contemporanea.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="foot">
+          <div>
+            <!-- Nota operativa rimossa -->
+            Il testo è presentato in forma continua.
+          </div>
+          <div>
+            <a class="btn" href="#intro" aria-label="Torna su">↑ Torna su</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="card">
+        <div class="hd">
+          <h2>Indice rapido</h2>
+          <span class="badge"><span class="dot"></span>salti</span>
+        </div>
+        <div class="toc" aria-label="Indice rapido">
+          <a href="#intro"><span>Introduzione</span><small>cornice</small></a>
+          <a href="#testo-integrale"><span>Testo integrale</span><small>completo</small></a>
+        </div>
+
+        <div class="mini">
+          <div class="box">
+            <h4>File & percorso</h4>
+            <ul class="list">
+              <li><strong>Cartella:</strong> <code>Approfondimento/</code></li>
+              <li><strong>Pagina:</strong> <code>fiore-simbolo.html</code></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot">
+          <span>File: <code>Approfondimento/fiore-simbolo.html</code></span>
+          <a class="btn" href="../index.html">← Home</a>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="../pwa.js" defer></script>
+</body>
+</html>
