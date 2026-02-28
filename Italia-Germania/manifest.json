@@ -1,0 +1,32 @@
+{
+  "name": "L’Italia dall’alleanza con Francia e Inghilterra all’abbraccio nazista",
+  "short_name": "Italia 1919-39",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f1116",
+  "theme_color": "#961B2B",
+  "description": "Percorso didattico: Italia e Germania (1919–1939), dall’alleanza con Francia e Inghilterra all’Asse Roma-Berlino.",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}
