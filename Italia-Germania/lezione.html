@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lezione – Italia e Germania</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#961B2B">
+  <link rel="apple-touch-icon" href="assets/icons/icon-180.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a class="home-btn" href="index.html" aria-label="Home">
+      <svg class="home-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M3 10.8 12 3l9 7.8V21a1 1 0 0 1-1 1h-5.5v-6.2a1 1 0 0 0-1-1h-3a1 1 0 0 0-1 1V22H4a1 1 0 0 1-1-1V10.8Z" stroke="rgba(242,242,242,.95)" stroke-width="1.6" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <div>
+      <h1>Italia e Germania (1919–1939): dall’instabilità all’alleanza</h1>
+      <div class="subtitle">Primo dopoguerra → crisi → avvicinamento → Asse Roma-Berlino</div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card main">
+    <div class="lesson">
+      <p>
+        Alla fine della Prima guerra mondiale (1919) l’Europa è formalmente pacificata ma in realtà instabile.
+        In Germania nasce la
+        <strong class="term" data-popup="weimar">Repubblica di Weimar</strong>,
+        una democrazia fragile; nel 1923 la crisi economica alimenta sfiducia e radicalizzazione.
+      </p>
+
+      <p>
+        In Italia, tra 1919 e 1920 esplode il
+        <strong class="term" data-popup="biennio">biennio rosso</strong>.
+        Nel 1922 Mussolini conquista il potere e avvia la costruzione del regime fascista.
+      </p>
+
+      <p>
+        Nel 1933 Hitler diventa cancelliere: punta al riarmo e a una
+        <strong class="term" data-popup="grande">Grande Germania</strong>.
+        Nel 1934 Mussolini, per timore di una Germania troppo forte ai confini, difende inizialmente l’indipendenza dell’Austria.
+      </p>
+
+      <p>
+        Il punto di svolta arriva con la
+        <strong class="term" data-popup="abissinia">Guerra d’Abissinia</strong> (1935–1936):
+        l’Italia invade l’Etiopia, la
+        <strong class="term" data-popup="sdn">Società delle Nazioni</strong>
+        condanna e le sanzioni isolano Roma. In questo isolamento Mussolini si avvicina a Hitler:
+        nel 1936 nasce l’
+        <strong class="term" data-popup="asse">Asse Roma-Berlino</strong>.
+      </p>
+
+      <p>
+        Nel 1938 la Germania realizza l’
+        <strong class="term" data-popup="anschluss">Anschluss</strong>.
+        Nello stesso anno, alla
+        <strong class="term" data-popup="monaco">Conferenza di Monaco</strong>,
+        le democrazie concedono a Hitler i Sudeti.
+        Sempre nel 1938 l’Italia introduce le
+        <strong class="term" data-popup="razziali">leggi razziali</strong>,
+        segnando un allineamento ideologico.
+      </p>
+
+      <p>
+        Nel 1939 l’intesa diventa vincolo militare:
+        <strong class="term" data-popup="patto_acciaio">Patto d’Acciaio</strong>.
+        Ad agosto la Germania firma il
+        <strong class="term" data-popup="molotov">Patto di non aggressione (Molotov–Ribbentrop)</strong>.
+        Il 1° settembre 1939 l’invasione della Polonia dà inizio alla guerra.
+      </p>
+
+      <h2>Domanda guida</h2>
+      <p>
+        Perché l’Italia passa da una convergenza con Francia e Regno Unito a un’alleanza con la Germania?
+        Per ambizione imperiale, isolamento dopo l’Etiopia, affinità tra regimi autoritari e calcolo opportunistico
+        in un’Europa dove le democrazie appaiono indecise.
+      </p>
+
+      <div class="footer-note">
+        Tocca le parole in grassetto per aprire gli approfondimenti. Chiudi con “Chiudi”, toccando fuori dal riquadro oppure con ESC (su PC).
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Approfondimento">
+  <div class="modal-card">
+    <div class="modal-head">
+      <div class="modal-title" data-modal-title>Approfondimento</div>
+      <button class="modal-close" type="button" data-modal-close>Chiudi</button>
+    </div>
+    <div class="modal-body" data-modal-body></div>
+  </div>
+</div>
+
+<div id="updateBanner" class="update-banner" role="status" aria-live="polite">
+  <div>Aggiornamento disponibile.</div>
+  <button type="button">Ricarica</button>
+</div>
+
+<script>
+window.__POPUPS__ = {
+  "weimar": {
+    "title": "Repubblica di Weimar (1919–1933)",
+    "body": "<p>La Repubblica di Weimar nasce nel 1919 dopo l’abdicazione dell’imperatore Guglielmo II. È il primo tentativo di instaurare in Germania una democrazia parlamentare fondata su una costituzione moderna.</p><p>Tuttavia è fragile: deve accettare Versailles, affronta crisi economiche (iperinflazione 1923) e subisce attacchi da estremisti di sinistra e di destra.</p><p>La crisi del 1929 indebolisce ulteriormente il sistema democratico e favorisce l’ascesa nazista. Nel 1933 Hitler pone fine alla Repubblica di Weimar instaurando un regime totalitario.</p>"
+  },
+  "biennio": {
+    "title": "Biennio rosso (1919–1920)",
+    "body": "<p>Periodo di forti tensioni sociali in Italia tra 1919 e 1920: scioperi, occupazioni di fabbriche e proteste contadine.</p><p>Le classi dirigenti e i ceti medi temono una rivoluzione socialista: questo clima favorisce la crescita del fascismo, presentato come forza capace di ristabilire l’ordine.</p>"
+  },
+  "grande": {
+    "title": "Grande Germania",
+    "body": "<p>Obiettivo centrale della politica hitleriana: unire tutti i tedeschi in un unico Stato, superando i confini imposti da Versailles.</p><p>Include l’annessione dell’Austria e territori con minoranze tedesche. Collegato anche al concetto di spazio vitale (Lebensraum): espansione per ottenere risorse e territori.</p>"
+  },
+  "sdn": {
+    "title": "Società delle Nazioni",
+    "body": "<p>Nata nel 1920 per garantire la pace e risolvere conflitti tramite diplomazia. È il primo grande organismo internazionale per la sicurezza collettiva.</p><p>Non ha un esercito proprio e dipende dalla volontà degli Stati membri. L’assenza degli USA e l’inefficacia nel fermare aggressioni negli anni Trenta ne mostrano la debolezza.</p>"
+  },
+  "abissinia": {
+    "title": "Guerra d’Abissinia (1935–1936)",
+    "body": "<p>L’Italia invade l’Etiopia nel 1935 per costruire un impero coloniale e rafforzare prestigio e consenso.</p><p>La Società delle Nazioni condanna e impone sanzioni economiche, ma non interviene militarmente. Nel 1936 l’Italia proclama l’Impero.</p><p>L’isolamento diplomatico favorisce l’avvicinamento alla Germania.</p>"
+  },
+  "asse": {
+    "title": "Asse Roma-Berlino (1936)",
+    "body": "<p>Accordo politico tra Italia e Germania nel 1936. “Asse” indica l’idea che la politica europea ruoti attorno a questa intesa.</p><p>Nasce dopo la guerra d’Etiopia e segna il definitivo avvicinamento tra i due regimi, fondato su interessi comuni e affinità ideologiche.</p>"
+  },
+  "anschluss": {
+    "title": "Anschluss (1938)",
+    "body": "<p>Annessione dell’Austria alla Germania nel marzo 1938. Presentata come unione volontaria, in realtà è frutto di pressione politica e militare nazista.</p><p>Viola Versailles e rafforza notevolmente la potenza tedesca.</p>"
+  },
+  "monaco": {
+    "title": "Conferenza di Monaco (1938)",
+    "body": "<p>Settembre 1938: Germania, Italia, Francia e Regno Unito discutono l’annessione dei Sudeti.</p><p>Francia e Regno Unito accettano per evitare la guerra: è l’appeasement. Non ferma però l’espansionismo di Hitler.</p>"
+  },
+  "razziali": {
+    "title": "Leggi razziali in Germania e in Italia (1935/1938)",
+    "body": "<p>In Germania le Leggi di Norimberga (1935) tolgono cittadinanza agli ebrei e vietano matrimoni/relazioni con cittadini “ariani”; nel 1938 la “Notte dei cristalli” segna il passaggio alla violenza aperta.</p><p>In Italia nel 1938: esclusione da scuola, pubblica amministrazione e forze armate; divieto di matrimoni misti. È un allineamento politico-ideologico con la Germania e una rottura giuridica e morale grave.</p>"
+  },
+  "patto_acciaio": {
+    "title": "Patto d’Acciaio (22 maggio 1939)",
+    "body": "<p>Alleanza militare tra Italia e Germania: collaborazione politica e sostegno militare reciproco in caso di conflitto.</p><p>L’Italia si lega formalmente alle future scelte militari della Germania.</p>"
+  },
+  "molotov": {
+    "title": "Patto di non aggressione (Molotov–Ribbentrop, 23 agosto 1939)",
+    "body": "<p>Germania e URSS dichiarano pubblicamente di non attaccarsi.</p><p>In una clausola segreta definiscono sfere di influenza e la spartizione della Polonia.</p><p>Permette alla Germania di attaccare la Polonia senza temere un intervento sovietico immediato e apre la strada alla guerra.</p>"
+  }
+};
+</script>
+
+<script src="assets/js/pwa.js" defer></script>
+<script src="assets/js/lezione.js" defer></script>
+</body>
+</html>
