@@ -1,0 +1,145 @@
+:root{
+  --bg:#0f1115;
+  --panel:#171a21;
+  --panel2:#1c202a;
+  --text:#f2f2f2;
+  --muted:rgba(242,242,242,.75);
+  --accent:#961B2B;
+  --radius:18px;
+  --shadow:0 10px 28px rgba(0,0,0,.35);
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(1200px 800px at 20% 0%, rgba(150,27,43,.25), transparent 60%),
+    radial-gradient(900px 650px at 100% 10%, rgba(255,255,255,.08), transparent 55%),
+    var(--bg);
+  color:var(--text);
+}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--maxw);margin:0 auto;padding:18px}
+
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(15,17,21,.78);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(242,242,242,.10);
+}
+.header-inner{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.home-btn{
+  width:42px;height:42px;
+  display:grid;place-items:center;
+  border-radius:12px;
+  background:linear-gradient(180deg, rgba(150,27,43,.25), rgba(150,27,43,.08));
+  border:1px solid rgba(150,27,43,.5);
+  box-shadow:0 6px 18px rgba(150,27,43,.18);
+}
+.home-btn:active{transform:translateY(1px)}
+.home-ico{width:22px;height:22px;display:block}
+h1{font-size:18px;line-height:1.2;margin:0;letter-spacing:.2px}
+.subtitle{margin:6px 0 0;color:var(--muted);font-size:13px}
+
+.card{
+  background:linear-gradient(180deg, rgba(23,26,33,.92), rgba(23,26,33,.78));
+  border:1px solid rgba(242,242,242,.10);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.hero{display:grid;gap:14px;padding:16px}
+.hero img{
+  width:100%;height:auto;display:block;
+  border-radius:14px;
+  border:1px solid rgba(242,242,242,.12);
+  cursor:pointer;
+}
+.hero .hint{color:var(--muted);font-size:13px}
+.main{padding:16px}
+.lead{color:var(--muted);line-height:1.55}
+
+.lesson{line-height:1.65;color:rgba(242,242,242,.92);font-size:16px}
+.lesson p{margin:0 0 14px}
+.lesson h2{margin:20px 0 10px;font-size:18px;letter-spacing:.2px}
+
+.term{
+  font-weight:800;color:#fff;
+  text-decoration:underline;
+  text-decoration-color:rgba(150,27,43,.8);
+  text-underline-offset:3px;
+  cursor:pointer;
+}
+
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
+.pill{
+  font-size:12px;color:rgba(242,242,242,.85);
+  padding:8px 10px;border-radius:999px;
+  border:1px solid rgba(242,242,242,.12);
+  background:rgba(28,32,42,.65);
+}
+.footer-note{margin-top:16px;color:var(--muted);font-size:12px}
+
+/* MODAL */
+.modal{
+  position:fixed;inset:0;display:none;
+  align-items:center;justify-content:center;
+  padding:18px;
+  background:rgba(0,0,0,.62);
+  backdrop-filter:blur(6px);
+  z-index:100;
+}
+.modal[aria-hidden="false"]{display:flex}
+.modal-card{
+  width:min(820px,100%);
+  background:linear-gradient(180deg, rgba(28,32,42,.98), rgba(23,26,33,.96));
+  border:1px solid rgba(242,242,242,.14);
+  border-radius:18px;
+  box-shadow:0 16px 55px rgba(0,0,0,.55);
+  overflow:hidden;
+}
+.modal-head{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:10px;padding:12px 14px;
+  border-bottom:1px solid rgba(242,242,242,.10);
+}
+.modal-title{font-weight:800;font-size:15px}
+.modal-close{
+  border:none;
+  background:rgba(150,27,43,.22);
+  color:var(--text);
+  border:1px solid rgba(150,27,43,.55);
+  border-radius:12px;
+  padding:8px 10px;
+  cursor:pointer;
+}
+.modal-close:active{transform:translateY(1px)}
+.modal-body{padding:14px 14px 16px;color:rgba(242,242,242,.88);line-height:1.6;font-size:15px}
+
+.update-banner{
+  position:fixed;left:12px;right:12px;bottom:12px;
+  max-width:var(--maxw);margin:0 auto;
+  background:rgba(23,26,33,.95);
+  border:1px solid rgba(242,242,242,.14);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:12px 14px;
+  display:none;
+  align-items:center;justify-content:space-between;gap:12px;
+  z-index:120;
+}
+.update-banner.show{display:flex}
+.update-banner button{
+  border:none;background:var(--accent);color:#fff;
+  padding:10px 12px;border-radius:12px;cursor:pointer;
+}
+.update-banner button:active{transform:translateY(1px)}
