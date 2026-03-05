@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Leopardi Platform – Demo PWA</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0f0f12"/>
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <div class="title">Leopardi Platform</div>
+    <div class="pill">PWA • demo</div>
+    <div class="pill" id="pillStatus">caricamento…</div>
+  </header>
+
+  <div id="stage">
+    <canvas id="c"></canvas>
+
+    <div id="hud">
+      <div id="msg"></div>
+      <div id="toast"></div>
+
+      <div class="controls" aria-label="Controlli touch">
+        <div class="pad">
+          <div class="key" id="btnLeft">◀</div>
+          <div class="key" id="btnRight">▶</div>
+        </div>
+        <div class="pad">
+          <div class="key primary" id="btnJump">⤒</div>
+          <div class="key danger" id="btnAct">◎</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    Controlli: frecce / A-D per muovere, spazio per saltare, E per azione. Su mobile usa i pulsanti.
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
