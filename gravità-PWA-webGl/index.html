@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Einstein Gravity Lab</title>
+  <meta name="description" content="Esperimento interattivo sulla gravità secondo Einstein, con vista 2D e 3D." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar glass">
+      <div>
+        <h1>Einstein Gravity Lab</h1>
+        <p>La gravità non come forza che tira, ma come spazio-tempo che si incurva.</p>
+      </div>
+      <div class="header-actions">
+        <button id="resetBtn" class="btn">Reset</button>
+        <button id="pauseBtn" class="btn">Pausa</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="viewer glass">
+        <div class="viewer-toolbar">
+          <div class="segmented" role="tablist" aria-label="Modalità vista">
+            <button class="seg active" data-view="3d">Vista 3D</button>
+            <button class="seg" data-view="2d">Vista 2D</button>
+          </div>
+
+          <div class="segmented" role="tablist" aria-label="Esperimento">
+            <button class="seg active" data-body="deflect">Oggetto che devia</button>
+            <button class="seg" data-body="orbit">Oggetto che entra in orbita</button>
+          </div>
+        </div>
+
+        <div id="sceneWrap" class="scene-wrap">
+          <canvas id="webglCanvas"></canvas>
+          <canvas id="canvas2d" hidden></canvas>
+          <div class="hud glass-soft">
+            <div><span class="label">Esperimento</span><span id="hudExperiment">Oggetto che devia</span></div>
+            <div><span class="label">Modalità</span><span id="hudView">Vista 3D</span></div>
+            <div><span class="label">Stato</span><span id="hudStatus">In esecuzione</span></div>
+          </div>
+          <div class="hint glass-soft">
+            PC: trascina per ruotare, rotella per zoom, pulsanti per cambiare esperimento.<br>
+            iPad: trascina con il dito per ruotare, pinch per zoom.
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel glass">
+        <section>
+          <h2>Controlli fisici</h2>
+          <label>
+            <span>Massa centrale</span>
+            <input id="massSlider" type="range" min="30" max="120" value="78" />
+            <strong id="massValue">78</strong>
+          </label>
+
+          <label>
+            <span>Curvatura visiva</span>
+            <input id="warpSlider" type="range" min="20" max="120" value="82" />
+            <strong id="warpValue">82</strong>
+          </label>
+
+          <label>
+            <span>Velocità del tempo</span>
+            <input id="timeSlider" type="range" min="20" max="140" value="100" />
+            <strong id="timeValue">100</strong>
+          </label>
+        </section>
+
+        <section>
+          <h2>Azioni</h2>
+          <div class="stack">
+            <button id="launchBtn" class="btn primary">Lancia oggetto scelto</button>
+            <button id="toggleGridBtn" class="btn">Mostra/Nascondi griglia</button>
+            <button id="toggleTrailsBtn" class="btn">Mostra/Nascondi scie</button>
+          </div>
+        </section>
+
+        <section>
+          <h2>Che cosa succede</h2>
+          <p id="explanation">
+            Questo oggetto passa vicino alla massa centrale, piega la sua traiettoria e prosegue oltre. È una visualizzazione intuitiva della deviazione del percorso in uno spazio curvo.
+          </p>
+        </section>
+
+        <section>
+          <h2>Nota scientifica</h2>
+          <p>
+            Qui non stai vedendo una soluzione completa delle equazioni di campo. Stai vedendo una simulazione didattica, costruita per rendere chiara l’idea di Einstein: la materia curva lo spazio-tempo e i corpi seguono quella geometria.
+          </p>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
