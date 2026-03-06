@@ -1,0 +1,22 @@
+{
+  "name": "L'eco di Leopardi",
+  "short_name": "Eco Leopardi",
+  "description": "Percorso interattivo nel pensiero di Giacomo Leopardi: lezioni, video, schemi, quiz e appunti personali.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4efe6",
+  "theme_color": "#1f2b3a",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

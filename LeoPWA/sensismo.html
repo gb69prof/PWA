@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il sensismo · L'eco di Leopardi</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="theme-color" content="#1f2b3a">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="sensismo">
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <h2>L'eco di Leopardi</h2>
+      <button class="icon-btn close-sidebar" data-close-sidebar aria-label="Chiudi menu">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="biografia.html">Biografia</a>
+<a href="leopardi-romanticismo.html">Leopardi e il Romanticismo</a>
+<a href="filosofia.html">La filosofia base</a>
+<a href="pessimismo-storico.html">Il pessimismo storico</a>
+<a href="pessimismo-cosmico.html">Il pessimismo cosmico</a>
+<a href="conclusione.html">Conclusione</a>
+<a href="quiz.html">Quiz</a>
+<a href="video.html">Video</a>
+<a href="schemi.html">Schemi</a>
+    </nav>
+  </aside>
+
+  <div class="overlay" data-close-sidebar></div>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <a class="icon-btn" href="index.html" aria-label="Torna alla home">⌂</a>
+      <button class="icon-btn" data-open-sidebar aria-label="Apri menu">☰</button>
+    </div>
+    <h1>Il sensismo</h1>
+    <a class="icon-btn" href="https://chatgpt.com/g/g-PWnQHYd8S-leopardi-s-echo" target="_blank" rel="noopener" aria-label="Apri il chatbot">◎</a>
+  </header>
+
+  <main class="lesson-grid">
+    <section class="media-column">
+      <div class="media-frame video-frame"><iframe width="560" height="315" src="https://app.heygen.com/embeds/153fd200eebf4edcb8415840bb72f365" title="gbprof - sensismo" frameborder="0" allow="encrypted-media; fullscreen;" allowfullscreen></iframe></div>
+      <div class="context-card">
+        <h3>Indice della pagina</h3>
+        <div class="mini-index"><a href="pessimismo-storico.html">Il pessimismo storico</a>
+<a href="poetica.html">La poetica del vago e dell’indefinito</a></div>
+      </div>
+    </section>
+
+    <section class="content-column">
+      <article class="lesson-article prose"><h1>Il sensismo</h1>
+<p>Il sensismo è una teoria della conoscenza secondo cui tutte le idee derivano dai sensi.</p>
+<p>Non esistono idee innate, non esistono verità già scritte dentro di noi: l’uomo conosce solo ciò che ha prima percepito.</p>
+<p>Vedere, toccare, udire, odorare, gustare: è da qui che nasce tutto.</p>
+<p>Secondo il sensismo, la mente non è una fonte autonoma di contenuti, ma una sorta di laboratorio che rielabora materiali provenienti dall’esperienza sensibile. Prima viene l’esperienza, poi l’idea. Senza esperienza, nessun concetto.</p>
+<figure class="content-figure"><img src="assets/images/sensismo.webp" alt="sensismo"><figcaption>Mappa o schema di supporto.</figcaption></figure>
+<p>Da questa impostazione deriva anche una visione dell’agire umano molto precisa:</p>
+<p>Piacere e dolore sono le due grandi guide dell’azione.</p>
+<p>Cerchiamo ciò che produce piacere.</p>
+<p>Evitiamo ciò che provoca dolore.</p>
+<p>Ogni scelta, anche la più complessa, affonda le radici in queste due forze fondamentali.</p>
+<p>Il sensismo nasce in ambito illuminista e si sviluppa soprattutto nel Settecento (in Francia in particolare), come reazione contro le teorie che parlavano di idee innate o di conoscenze indipendenti dall’esperienza.</p>
+<h3>In sintesi</h3>
+<p>L’uomo conosce perché sente.</p>
+<p>L’uomo agisce perché prova piacere o dolore.</p>
+<p>Tutto parte dal corpo. La mente viene dopo.</p></article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-action" href="quiz.html#sensismo">📝 <span>Test della lezione</span></a>
+    <button class="footer-action" id="open-notes">🗒️ <span>Appunti personali</span></button>
+  </footer>
+</div>
+
+<div class="notes-panel" id="notesPanel" hidden>
+  <div class="notes-header" id="notesDragHandle">
+    <strong>Appunti personali</strong>
+    <div class="notes-actions">
+      <button id="downloadNotes" class="icon-btn" aria-label="Scarica appunti">💾</button>
+      <button id="closeNotes" class="icon-btn" aria-label="Chiudi appunti">✕</button>
+    </div>
+  </div>
+  <textarea id="notesText" placeholder="Scrivi qui i tuoi appunti..."></textarea>
+  <p class="notes-hint">Gli appunti restano salvati nel browser. Con il pulsante di salvataggio scarichi un file .txt.</p>
+</div>
+
+<div class="glossary-modal" id="glossaryModal" hidden>
+  <div class="glossary-card">
+    <button class="icon-btn glossary-close" id="closeGlossary">✕</button>
+    <h3 id="glossaryTitle"></h3>
+    <p id="glossaryDef"></p>
+    <p class="glossary-quote" id="glossaryQuote"></p>
+    <div class="glossary-links" id="glossaryLinks"></div>
+    <button class="pill-btn" id="highlightOccurrences">Evidenzia nel testo</button>
+  </div>
+</div>
+
+<script src="glossario.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
