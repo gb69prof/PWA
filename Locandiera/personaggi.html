@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head><title>La Locandiera - Personaggi</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#8f3d2c">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Locandiera">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/icons/icon-192.png" alt="Icona dell'app La Locandiera">
+      <div class="brand-text">
+        <div class="brand-kicker">PWA didattica</div>
+        <div class="brand-title">La Locandiera</div>
+      </div>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Apri navigazione" data-nav-toggle>Menu</button>
+    <nav class="nav" data-nav>
+      <a href="index.html">Home</a>
+      <a href="trama.html">Trama</a>
+      <a href="personaggi.html">Personaggi</a>
+      <a href="fabrizio.html">Mirandolina e Fabrizio</a>
+      <a href="soliloquio.html">Soliloquio</a>
+      <a href="vocabolario.html">Vocabolario</a>
+      <a href="nobilta.html">Nobiltà</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-shell">
+  <section class="page-hero paper-panel">
+    <div>
+      <div class="eyebrow">Sezione 2</div>
+      <h1 class="page-title">I personaggi</h1>
+      <p>Qui Goldoni non costruisce figure decorative. Ogni personaggio ha una funzione precisa: Mirandolina domina, il Cavaliere resiste e poi cade, il Marchese rappresenta l'aristocrazia vuota, il Conte la ricchezza senza nobiltà vera, Fabrizio il buon senso pratico.</p>
+      <div class="page-index">
+        <a href="#ritratto">Ritratti</a><a href="#mappa">Mappa generale</a>
+      </div>
+    </div>
+    <div class="page-hero-image card"><img src="assets/images/personaggi-mappa.png" alt="Mappa dei caratteri dei personaggi della Locandiera"></div>
+  </section>
+
+  <section class="section grid-3" id="ritratto">
+    <article class="paper-panel info-card"><span class="kicker-tag">Centro</span><h3>Mirandolina</h3><p>Locandiera indipendente, affascinante e astuta. Gestisce la locanda e gestisce anche il desiderio maschile. È moderna perché non aspetta di essere scelta: sceglie lei la distanza, il tono e il limite.</p></article>
+    <article class="paper-panel info-card"><span class="kicker-tag">Contrasto</span><h3>Cavaliere di Ripafratta</h3><p>Nobile colto e ricco, ma misogino. La sua sconfitta non è solo amorosa: mostra che il rifiuto altezzoso verso le donne può trasformarsi in umiliazione.</p></article>
+    <article class="paper-panel info-card"><span class="kicker-tag">Satira</span><h3>Marchese di Forlipopoli</h3><p>Vecchia aristocrazia: titoli, vanità, apparenza. Porta il peso del nome ma non la sostanza del potere reale.</p></article>
+    <article class="paper-panel info-card"><span class="kicker-tag">Satira</span><h3>Conte d'Albafiorita</h3><p>Nuova nobiltà arricchita. Compensa con i doni ciò che non possiede come eleganza morale o raffinatezza.</p></article>
+    <article class="paper-panel info-card"><span class="kicker-tag">Equilibrio</span><h3>Fabrizio</h3><p>Servo sveglio e promesso sposo. Rappresenta la soluzione stabile: non il sogno, ma la continuità della locanda e della reputazione.</p></article>
+    <article class="paper-panel info-card"><span class="kicker-tag">Finzione</span><h3>Dejanira e Ortensia</h3><p>Commedianti che fingono di essere dame. Servono a mostrare una cosa semplice: non basta recitare, bisogna saper dominare la scena. Mirandolina lo sa fare, loro no.</p></article>
+  </section>
+
+  <section class="section" id="mappa">
+    <div class="grid-2">
+      <article class="paper-panel text-block">
+        <h2>La logica dei ruoli</h2>
+        <p>Il punto non è soltanto chi sia simpatico o ridicolo. Il punto è il sistema. Marchese e Conte non sono due individui qualsiasi: sono maschere sociali. Il Cavaliere è una maschera psicologica e ideologica. Fabrizio è la pressione concreta del reale.</p>
+        <p>Mirandolina vive al centro di queste spinte. Non è libera in astratto: è libera perché sa leggerle, usarle e fermarsi prima del disastro.</p>
+      </article>
+      <figure class="figure-card paper-panel">
+        <img src="assets/images/personaggi-mappa.png" alt="Schema riassuntivo dei personaggi principali">
+        <figcaption>La mappa funziona bene perché mostra Mirandolina come perno e gli altri come forze che le ruotano attorno: desiderio, prestigio, denaro, misoginia, servizio.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-box paper-panel">
+    <strong>La Locandiera - percorso didattico</strong><br>
+    Materiali organizzati per lo studio su Carlo Goldoni, con immagini concettuali, sintesi e pagina PDF originale allegata.
+  </div>
+</footer>
+<div class="update-banner" id="update-banner" role="status" aria-live="polite">
+  <span>Aggiornamento disponibile.</span>
+  <button id="update-reload" type="button">Ricarica</button>
+</div>
+<script defer src="assets/js/app.js"></script>
+<script defer src="pwa.js"></script>
+
+</body>
+</html>
