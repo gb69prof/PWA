@@ -1,0 +1,25 @@
+{
+  "name": "Ugo Foscolo – Lezione Digitale",
+  "short_name": "Foscolo",
+  "description": "Percorso didattico interattivo su Ugo Foscolo: vita, poetica, opere, analisi",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f0e0c",
+  "theme_color": "#c4a44a",
+  "orientation": "portrait-primary",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
