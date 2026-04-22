@@ -1,0 +1,15 @@
+{
+  "name": "L'eco di Foscolo",
+  "short_name": "EcoFoscolo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#e6edf4",
+  "theme_color": "#1d4f82",
+  "icons": [
+    {
+      "src": "assets/img/Copertina.PNG",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

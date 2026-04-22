@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1d4f82" />
+    <title>L'eco di Foscolo</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow-main">PWA editoriale didattica</p>
+          <h1>L'eco di Foscolo</h1>
+          <p class="subtitle">a cura di gbprof e Libera</p>
+          <p class="lead">
+            Questa PWA prova a fare quello che EPUB e PDF, da soli, non riescono a tenere insieme: testo vivo,
+            immagini impaginate, atmosfera da libro e struttura didattica usabile davvero in classe.
+          </p>
+          <p class="lead">
+            Su desktop la lettura si apre come un libro a doppia pagina; su tablet e smartphone diventa una pagina singola,
+            più leggibile e stabile. Il testo resta selezionabile, annotabile e adattabile.
+          </p>
+        </div>
+        <div class="cover-panel">
+          <div class="cover-frame"><img src="assets/img/Copertina.PNG" alt="Copertina L'eco di Foscolo" /></div>
+          <div class="mini-row">
+            <div class="mini-frame"><img src="assets/img/IMG_4527.jpeg" alt="Esempio impaginazione 1" /></div>
+            <div class="mini-frame"><img src="assets/img/IMG_4528.jpeg" alt="Esempio impaginazione 2" /></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="toolbar">
+        <div class="actions">
+          <button class="btn btn--ghost" id="prevBtn">← Indietro</button>
+          <button class="btn btn--accent" id="nextBtn">Avanti →</button>
+          <button class="btn btn--ghost" id="homeBtn">Torna in alto</button>
+        </div>
+        <div class="actions-right">
+          <button class="btn btn--ghost" id="fontMinus">A−</button>
+          <button class="btn btn--ghost" id="fontPlus">A+</button>
+          <button class="btn btn--ghost" id="currentChapterLabel" aria-live="polite">Capitolo</button>
+        </div>
+      </section>
+
+      <section class="layout">
+        <div>
+          <div class="desktop-spread" id="desktopSpread"></div>
+          <div class="mobile-page" id="mobilePage"></div>
+          <p class="footer-note">Prototipo completo PWA • Testo vivo, immagini integrate, note salvate in locale</p>
+        </div>
+
+        <aside class="sidebar-panel">
+          <section class="panel">
+            <h3>Indice rapido</h3>
+            <div class="chapter-list" id="chapterList"></div>
+          </section>
+
+          <section class="panel">
+            <h3>Scelte di progetto</h3>
+            <p>Desktop a doppia pagina, mobile a pagina singola. Il modello non imita il cartaceo in modo servile: ne conserva il ritmo, ma resta leggibile come prodotto digitale.</p>
+            <p>Le immagini sono trattate come elementi editoriali. Il testo resta vero testo, quindi selezionabile, sottolineabile e ricercabile.</p>
+          </section>
+
+          <section class="panel">
+            <h3>Appunti di studio</h3>
+            <textarea class="notes-area" id="notesArea" placeholder="Scrivi qui i tuoi appunti sul capitolo aperto..."></textarea>
+          </section>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./assets/js/content.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
